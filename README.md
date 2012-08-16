@@ -23,18 +23,18 @@ should `POST` a JSON object that looks something like this:
         'url': 'http://example.com/attendees',
         'title': 'ExampleCon Attendees',
         'keep': '7',
-        'filters': \['klout','pagerank'\],
+        'filters': ['klout','pagerank'],
         'schema':
         {
             'name': '.fullname',
             'twitter': '.twitter',
-            'website': '.info a\[href\]',
+            'website': '.info a[href]',
         }
-    },
+    }
 
 This will return a JSON object without the filtered data yet:
 
-    \[{
+    [{
         'name': 'Alan Turing',
         'twitter': '',
         'website': 'http://www.turing.org.uk',
